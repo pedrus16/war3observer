@@ -34,7 +34,7 @@ def main():
 
   args = parser.parse_args()
 
-  path = os.path.join(os.path.dirname(__file__), args.config)
+  path = args.config
 
   if os.path.isfile(path):
     with open(path, 'r') as json_file:
